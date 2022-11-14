@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url("/Users/Ivan/Desktop/WebAppProjects/mass-emailer/src/images/email-bg.jpg");
+  background-image: url("./images/email-bg.jpg");
   background-size: cover;
   margin: 0px;
   padding: 0px;
