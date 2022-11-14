@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import "../styles/Body.css";
+
 const Body = () => {
     const [base64, setBase64] = useState('');
 
@@ -42,11 +44,12 @@ const Body = () => {
         })
     }
     return (
-        <div>
+        <div className='body'>
+            <h1>EMAILER</h1>
             <form>
                 <input type='file' accept='application/pdf' onChange={onChange} />
             </form>
-            <button onClick={handleSubmit}>SEND TO LAMBDA</button>
+            <button className='button' onClick={handleSubmit}>SEND TO LAMBDA</button>
         </div>
     );
 };
