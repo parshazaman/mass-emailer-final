@@ -3,8 +3,16 @@
     height: 500px;
     width: 30%;
     padding-top: 200px;
+    color: #282c34;
 }
 
 .button {
     margin-top: 30px;
+}
+
+.container {
+    background-color: white;
+    margin: 0 20px 0 20px;
+    padding-bottom: 30px;
+    border-radius: 25px;
 }

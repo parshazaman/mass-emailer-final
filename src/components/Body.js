@@ -45,11 +45,14 @@ const Body = () => {
     }
     return (
         <div className='body'>
-            <h1>EMAILER</h1>
-            <form>
-                <input type='file' accept='application/pdf' onChange={onChange} />
-            </form>
-            <button className='button' onClick={handleSubmit}>SEND TO LAMBDA</button>
+            <div className='container'>
+                <h1>EMAILER</h1>
+                <h3>Send out emails and attachments</h3>
+                <form>
+                    <input type='file' accept='application/pdf' onChange={onChange} />
+                </form>
+                <button className='button' onClick={handleSubmit}>SEND TO LAMBDA</button>
+            </div>
         </div>
     );
 };
