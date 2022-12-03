@@ -34,7 +34,7 @@ const Body = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch('https://yus2gvnsgk.execute-api.us-east-1.amazonaws.com/sendEmail', {
+        fetch('', {
             mode: "no-cors",
             method: "POST",
             headers: {
