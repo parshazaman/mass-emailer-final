@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-
 import "../styles/Body.css";
 
 const Body = () => {
@@ -42,8 +41,8 @@ const Body = () => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                senderName: "yexovi9626@edinel.com",
-                senderEmail: "yexovi9626@edinel.com",
+                senderName: "ivanjohnmorales@gmail.com",
+                senderEmail: ["yexovi9626@edinel.com", "ivanjohnmorales@gmail.com"],
                 message: userMessage,
                 base64Data: base64,
                 date: new Date(),
