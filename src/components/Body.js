@@ -70,10 +70,13 @@ const Body = () => {
                 <form>
                     <input className='file-input' type='file' accept='application/pdf' onChange={onChange} />
                     <br></br>
-                    <input placeholder='Enter email to send to' onChange={onEmailChange}></input>
+                    <input className='email-input' id='email-input' placeholder='Enter email to send to' onChange={onEmailChange}></input>
+                    <br></br>
+                    <label for='email-input'>Divide each email with ", " (comma then space)</label>
+                    <br></br>
                     <textarea className='input-field' rows="2" cols="40" placeholder="Enter a message" onChange={onTextChange}></textarea>
                 </form>
-                <button className='button' onClick={handleSubmit}>SEND TO LAMBDA</button>
+                <button className='button' onClick={handleSubmit}>SEND</button>
             </div>
         </div>
     );
