@@ -52,7 +52,7 @@ const Body = () => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                senderName: "ivanjohnmorales@gmail.com",
+                senderName: "MassEmailerService@gmail.com",
                 senderEmail: sendToEmail,
                 message: userMessage,
                 base64Data: base64,
