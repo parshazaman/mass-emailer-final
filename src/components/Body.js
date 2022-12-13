@@ -42,7 +42,7 @@ const Body = () => {
             },
             body: JSON.stringify({
                 senderName: "ivanjohnmorales@gmail.com",
-                senderEmail: ["yexovi9626@edinel.com", "ivanjohnmorales@gmail.com"],
+                senderEmail: ["ijmdevmail@gmail.com", "ivanjohnmorales@gmail.com"],
                 message: userMessage,
                 base64Data: base64,
                 date: new Date(),
