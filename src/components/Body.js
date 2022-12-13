@@ -6,7 +6,7 @@ import logo from '../images/mass-emailer-logo.png'
 const Body = () => {
     const [base64, setBase64] = useState('');
     const [userMessage, setUserMessage] = useState('');
-    const [sendToEmail, setSendToEmail] = useState([]);
+    const [sendToEmail, setSendToEmail] = useState('');
 
     const onChange = (e) => {
         const files = e.target.files;
@@ -23,10 +23,8 @@ const Body = () => {
     const onEmailChange = (e) => {
         const receiverEmail = e.target.value;
         let receiverEmailArray = receiverEmail.split(', ');
-        console.log(receiverEmailArray)
         setSendToEmail(receiverEmailArray)
-        console.log(sendToEmail)
-
+        console.log(receiverEmailArray)
     }
 
     const onLoad = (fileString) => {
@@ -52,7 +50,7 @@ const Body = () => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                senderName: "MassEmailerService@gmail.com",
+                senderName: "massemailerservice@gmail.com",
                 senderEmail: sendToEmail,
                 message: userMessage,
                 base64Data: base64,
